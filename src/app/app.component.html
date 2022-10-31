@@ -2,16 +2,16 @@
   <p-table [value]="selectedRecipes" responsiveLayout="scroll">
     <ng-template pTemplate="header">
         <tr>
-          <th>Day</th>
-            <th>Name</th>
-            <th>Absolutely Not</th>
+          <th style="width:60px">Day</th>
+            <th style="width:60px">Name</th>
+            <th style="width:60px">Absolutely Not</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-recipe>
         <tr>
-            <td>{{recipe.day}}</td>
-            <td>{{recipe.name}}</td>
-            <td style="text-align: center;">
+            <td style="width:60px">{{recipe.day}}</td>
+            <td style="width:60px">{{recipe.name}}</td>
+            <td style="text-align: center;width:60px">
               <p-button icon="pi pi-times" (click)="testMethod(recipe.name)"></p-button>
             </td>
         </tr>
