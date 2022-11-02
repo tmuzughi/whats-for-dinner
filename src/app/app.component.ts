@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+import { dinner } from 'src/models/dinner';
 import { recipe } from 'src/models/recipe';
+import recipes from 'src/app/recipes.json';
+import { ingredient } from 'src/models/ingredient';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +11,12 @@ import { recipe } from 'src/models/recipe';
 })
 export class AppComponent {
   title = 'eat-me-client';
-  recipes: recipe[] = [];
-  selectedRecipes: recipe[] = [];
+  recipes: dinner[] = [];
+  selectedRecipes: dinner[] = [];
   checkbox:boolean = false;
 
   ngOnInit(){
+    this.getAllIngredients();
     this.recipes = [
       {name:"Strogonoff",day:""},
       {name:"Burgers",day:""},
@@ -40,6 +44,16 @@ export class AppComponent {
     ]
     this.chooseSevenRecipes()
   }
+  getAllIngredients(){
+    let ingredients:ingredient[] = [];
+    recipes.forEach(element => {
+      element.ingredients.forEach(innerElement => {
+        ingredients.push(innerElement);
+      });
+    });
+    console.log("Look at all these inredients");
+    console.log(ingredients)
+  }
   testMethod(pRecipeName:string){
     console.log(pRecipeName)
     let recipe = this.selectedRecipes.find(r => r.name == pRecipeName)
@@ -66,7 +80,7 @@ export class AppComponent {
       this.selectedRecipes[i].day = days[i];
     }
   }
-  getReplacementRecipe():recipe{
+  getReplacementRecipe():dinner{
     let randomIndex = -1;
     while(randomIndex == -1){
       let num = this.getRandomInt(0, this.recipes.length - 1);

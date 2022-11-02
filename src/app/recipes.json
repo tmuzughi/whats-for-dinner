@@ -1,0 +1,102 @@
+[{
+ "name":"Strogonoff",
+ "ingredients":[
+    {
+        "name": "Strogonoff 'Helper'",
+        "amount": "1 box"
+    },
+    {
+        "name": "Spinach",
+        "amount": "1/2 bag"
+    },
+    {
+        "name": "Beef",
+        "amount": "1 lb"
+    }]
+},
+{
+    "name":"Smash Burgers",
+    "ingredients":[
+       {
+           "name": "Burger Buns",
+           "amount": "2+"
+       },
+       {
+           "name": "Red Onion",
+           "amount": "1 each"
+       },
+       {
+            "name": "Tomato",
+            "amount": "1 each"
+        },
+       {
+           "name": "Beef",
+           "amount": "1 lb"
+       }]
+   },
+   {
+    "name":"Homemade Chicken Fingers",
+    "ingredients":[
+       {
+           "name": "Chicken Tenderloins",
+           "amount": "1 package"
+       },
+       {
+           "name": "Flour",
+           "amount": "3 cups"
+       },
+       {
+           "name": "Vegetable Oil",
+           "amount": "1 quart"
+       }]
+   },
+   {
+    "name":"Phillies",
+    "ingredients":[
+       {
+           "name": "Hoagie Bread",
+           "amount": "2 each"
+       },
+       {
+           "name": "Green Pepper",
+           "amount": "1 each"
+       },
+       {
+           "name": "Yellow Onion",
+           "amount": "1 each"
+       },
+       {
+            "name": "Shaved Steak",
+            "amount": "1 package"
+     }]
+    },
+     {
+        "name":"Chicken/Andouille Cajun Pasta",
+        "ingredients":[
+           {
+               "name": "Tri-color Spiral Pasta",
+               "amount": "1/2 box"
+           },
+           {
+               "name": "Andouille Sausage",
+               "amount": "1 package"
+           },
+           {
+               "name": "Chicken Tenderloins",
+               "amount": "1/2 package"
+           },
+           {
+                "name": "Heavy Cream",
+                "amount": "1 quart"
+            }]
+       },
+       {
+        "name":"Takeout",
+        "ingredients":[
+           {
+               "name": "Money",
+               "amount": "$20-$50"
+           }]
+       }
+   
+]

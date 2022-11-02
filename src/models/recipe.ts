@@ -1,4 +1,6 @@
+import { ingredient } from "./ingredient";
+
 export class recipe{
-    day:string = "";
     name:string = "";
+    ingredients:ingredient[] = [];
 }
